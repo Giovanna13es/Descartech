@@ -1,0 +1,71 @@
+/* Carrossel */
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.carrossel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slides img.ativo {
+  opacity: 1;
+}
+
+/* Apenas a imagem ativa aparece */
+.slides img.ativo {
+  opacity: 1;
+}
+
+/* Cards de serviços */
+.servicos {
+  text-align: center;
+  padding: 20px;
+}
+.servicos h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.cards {
+   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px;
+  max-width: 900px;  /* largura máxima centralizada */
+  margin: 0 auto;
+}
+.cards .card {
+   background: #0d6efd;          /* Azul */
+  color: 0E4D82;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 40px 20px;           /* Maior altura e largura */
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cards .card:hover {
+  background: #0b5ed7;          /* Azul mais escuro */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}

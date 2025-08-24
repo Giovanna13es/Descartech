@@ -1,0 +1,69 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho simples (se quiser usar futuramente) */
+header {
+  background: #0d6efd;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Rodapé */
+footer {
+/* Rodapé */
+footer {
+  margin: 0;
+  background: #0E4D82;;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+  background: #0E4D82;;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Botões */
+button {
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background: #0b5ed7;
+}
+
+/* Cards genéricos */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}

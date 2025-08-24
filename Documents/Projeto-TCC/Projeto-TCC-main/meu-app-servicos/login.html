@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main>
+    <h2>Escolha seu perfil</h2>
+
+    <div class="cards-login">
+      <div class="card-login" onclick="selecionarPerfil('prestador')">Sou Prestador</div>
+      <div class="card-login" onclick="selecionarPerfil('cliente')">Sou Contratante</div>
+    </div>
+  </main>
+
+  <script>
+    function selecionarPerfil(tipo) {
+      if(tipo === 'prestador') {
+        window.location.href = "login-prestador.html"; // redireciona para login do prestador
+      } else {
+        window.location.href = "login-cliente.html";  // redireciona para login do cliente
+      }
+    }
+  </script>
+
+  <footer>
+    <p>© 2025 Concerta ai - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

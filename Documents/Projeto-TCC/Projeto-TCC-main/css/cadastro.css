@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+
+  /* Imagem de fundo */
+  background: url('../assets/img/login_prestador.png') no-repeat center center;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px; /* espaço extra para não encostar no footer */
+}
+
+/* Card azul para o formulário */
+.card-form {
+  background: rgba(14, 77, 130, 0.9); /* azul semi-transparente */
+  color: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Inputs e selects */
+.card-form input,
+.card-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+
+/* Botão arredondado */
+.card-form button {
+  background: white;
+  color: #0E4D82;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.card-form a {
+  color: orange;       /* cor laranja */
+  text-decoration: none; /* remove sublinhado */
+  font-weight: bold;
+}
+
+.card-form a:hover {
+  text-decoration: underline; /* efeito ao passar o mouse */
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #0E4D82;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
